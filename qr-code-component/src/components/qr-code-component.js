@@ -8,15 +8,16 @@ const QRCodeComponent = () => {
     const [qrCodeDetails] = useState(QR_CODE_COMPONENT_DETAILS)
 
 
-    return (<div className="qr-code-component">
+    return (<main className="qr-code-component">
+        <h1 className="sr-only">QR Card Component</h1>
         <div className="qr-code-card">
-            <img src={qrCodeImage}></img>
+            <img src={qrCodeImage} alt="QR code to frontendmentor.io"></img>
             <div className="qr-code-card-content">
                 <h2>{qrCodeDetails.description}</h2>
                 <p>Scan the QR Code to visit Frontend Mentor and take your coding skills to the next level</p>
             </div>
         </div>
-    </div>)
+    </main>)
 }
 
 export default QRCodeComponent;

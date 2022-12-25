@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import QR_CODE_COMPONENT_DETAILS from "../utils/constants";
 import "./qr-code-component.css";
 import qrCodeImage from "../qrCodeImages/image-qr-code.png"
 
 // divide the QR component into preview and details component.
 const QRCodeComponent = () => {
-    const [qrCodeDetails, saveQRCodeDetails] = useState(QR_CODE_COMPONENT_DETAILS)
+    const [qrCodeDetails] = useState(QR_CODE_COMPONENT_DETAILS)
 
 
     return (<div className="qr-code-component">

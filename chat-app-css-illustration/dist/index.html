@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <link href="output.css" rel="stylesheet">
+    <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" /> -->
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+    </style>
+</head>
+
+<body class="flex bg-app-white h-screen static">
+    <div class="absolute t-0 w-1/3 bg-gradient-to-b from-light-magenta to-light-violet h-5/6 rounded-bl-full rounded-br-full -ml-20"></div>
+   
+        <div class="absolute left-[21.5em] top-28 w-60 min-h-fit border-8 rounded-3xl border-mobile-phone-width border-app-white z-10 bg-app-chat-background shadow-xl">
+            <div class="h-16 bg-gradient-to-r from-light-violet to-light-magenta rounded-t-3xl relative">
+                <div class="bg-app-white h-4 rounded-br-2xl rounded-bl-2xl w-3/5 m-auto"></div>
+                <div class="absolute flex bottom-2 items-center ml-2 mr-2 w-full">
+                    <div class="w-3 h-3 text-app-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6" class="font-bold">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                        </svg> 
+                    </div>     
+                    
+                    <img class="rounded-full h-5 w-5" src="../images/avatar.jpg" alt="avatar"></img>
+                    <div class="text-app-white ml-2 mr-4">
+                        <p class="text-chat-user-name font-bold">Samuel Green</p>
+                        <p class="text-chat-text">Available to Walk</p>
+                    </div>
+
+                    <div class="h-5 w-5 text-app-white flex-1 mr-4 flex justify-end">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6" class="h-3 w-3">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z" />
+                        </svg>   
+                    </div>
+                </div>
+            </div>
+            <p class="text-chat-text max-w-chat-bubble text-chat-violet-left-text bg-app-background-violet p-1 ml-2 mt-3 rounded-t-xl rounded-br-xl">That sounds great. I’d be happy with that.</p>
+            <p class="text-chat-text max-w-chat-bubble text-chat-violet-left-text bg-app-background-violet p-1 ml-2 mt-3 rounded-t-xl rounded-br-xl">Could you send over some pictures of your dog, please?</p>
+
+            <div class="flex justify-end mr-2 mt-3 pr-0">
+                <img class="rounded-xl w-12 h-12" src='../images/dog-image-1.jpg'></img>
+                <img class="rounded-xl w-12 h-12 ml-2" src='../images/dog-image-2.jpg'></img>
+                <img class="rounded-xl w-12 h-12 ml-2" src='../images/dog-image-3.jpg'></img>
+            </div>
+
+            <div class="flex justify-end mr-2 mt-3">
+                <p class="text-chat-text max-w-chat-bubble text-black bg-app-white p-1 rounded-t-xl rounded-bl-xl shadow-xl">Here are a few pictures. She’s a happy girl!</p>
+            </div>
+            <div class="flex justify-end mr-2 mt-3">
+                <p class="text-chat-text max-w-chat-bubble text-black bg-app-white p-1 rounded-t-xl rounded-bl-xl shadow-xl">Can you make it?</p>
+            </div>
+
+            <p class="text-chat-text max-w-chat-bubble text-chat-violet-left-text bg-app-background-violet p-1 ml-2 mt-3 rounded-t-xl rounded-br-xl">She looks so happy! The time we discussed works. How long shall I take her out for?</p>
+
+            <div class="flex max-w-special-chat-bubble bg-gradient-to-r from-light-magenta to-light-violet p-1 ml-2 mt-3 rounded-t-xl rounded-br-xl">
+                <div class="rounded-full w-3 h-3 border-circle border-app-white self-center"></div>
+                <p class="text-chat-text pt-1 pb-1 pl-2 pr-2 text-app-white">30 minute walk</p>
+                <p class="flex-1 text-chat-text pt-1 pb-1 pl-2 pr-2 text-app-white text-base font-semibold text-center">$29</p>
+            </div>
+
+            <div class="flex max-w-special-chat-bubble bg-gradient-to-r from-light-magenta to-light-violet p-1 ml-2 mt-3 rounded-t-xl rounded-br-xl">
+                <div class="rounded-full w-3 h-3 border-circle border-app-white self-center"></div>
+                <p class="text-chat-text pt-1 pb-1 pl-2 pr-2 text-app-white">1 hour walk</p>
+                <p class="flex-1 text-chat-text pt-1 pb-1 pl-2 pr-2 text-app-white text-base font-semibold text-center">$49</p>
+            </div>
+
+            <div class="flex p-1 justify-between bg-app-white ml-2 mt-3 mr-2 mb-2 rounded-2xl shadow-2xl">
+                <p class="text-gray-300 text-chat-text self-center ml-3">Type Message...</p>
+                <div class="rounded-full h-5 w-5 bg-submit-button-violet text-app-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-3 h-3">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                      </svg>                      
+                </div>
+            </div>
+         </div>
+
+         <div class="absolute right-64 max-w-text-box top-1/3 z-10">
+            <h2 class="text-heading text-submit-button-violet font-bold">Simple booking</h2>
+            <p class="mt-4 text-app-sub-text">
+            Stay in touch with our dog walkers through the chat interface. This makes it easy to
+            discuss arrangements and make bookings. Once the walk has been completed you can rate
+            your walker and book again all through the chat.
+            </p>
+         </div>
+   
+
+    <!-- <div>
+        <h2 class="text-submit-button-violet">Simple booking</h2>
+        <p>
+            
+        </p>
+    </div> -->
+
+    <div class="absolute bottom-0 -right-40 w-1/3 bg-app-chat-background h-5/6 rounded-tl-full rounded-tr-full -ml-20"></div>
+
+</body>
+
+</html>
